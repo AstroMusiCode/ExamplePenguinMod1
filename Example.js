@@ -10,13 +10,21 @@
             opcode: 'logToConsole',
             text: 'log to console',
             blockType: Scratch.BlockType.COMMAND
-          }
+          },
+          {
+            opcode: 'reporter',
+            text: 'Reporter',
+            blockType: Scratch.BlockType.REPORTER 
+          },
         ]
       };
     }
 
     logToConsole() {
       console.log('Hello world!');
+    }
+    getRandomNumber(min, max) {
+      return Math.random() * (max - min) + min;
     }
   }
 
